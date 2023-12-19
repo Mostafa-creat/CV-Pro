@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;600&display=swap');
+
+*{
+padding:0;
+margin: 0;
+box-sizing: border-box;
+
+}
+:root{
+    --primary-color:rgb(43, 221, 218);
+    --text-color:#727171;
+}
+html {
+font-size: 15px;
+}
+body{
+    font-family: inter, sans-serif;
+    background-color: black;
+    color: white;
+}
+
+/* commen styles */
+img {
+width: 100%;
+}
+a {
+    text-decoration: none;
+    color: white;
+}
+.discription {
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: var(--text-color);
+}
+.title {
+    margin: 5rem;
+    color: var(--primary-color);
+    font-weight: 700;
+    font-size: 2rem;
+    text-transform: uppercase;
+
+}
+.tel {
+    color: var(--primary-color);
+    font-size: 1.5rem;
+    font-weight: 700;
+    
+}
+.mail {
+    margin-top: 2rem;
+    color: var(--primary-color);
+    font-size: 1.5rem;
+    font-family: 400;
+}
+
+/* layouts */
+.container {
+    max-width: 1000px;
+    width: 90%;
+    margin: 0 auto;
+    display: grid;
+    padding: 5rem;
+    background: 070707;
+    grid-template-columns: 1fr 1fr; 
+    gap:4rem ;
+}
+@media only screen and (max-width: 768px) {
+    .container {
+        width: 100%;
+        grid-template-columns: 1fr;
+        padding: 3rem;
+        gap: 7rem;
+    }
+    .profile {
+        grid-column: 1 / -1;
+        margin-bottom: 2rem;
+    }
+    .group-1 {
+        display: flex;
+        flex-direction: column;
+        gap: 5rem;
+    }
+    
+}
+
+/* profile */
+.profile-container {
+    display: flex;
+    gap: 2rem;
+}
+.profile-profileimg {
+    max-width: 250px;
+}
+.profile-name-firstname {
+color: rgb(250, 255, 196);
+font-weight: 200;
+font-size: clamp(2rem, 8vw, 4rem);
+text-transform: uppercase;
+display: block;
+margin-bottom: 0.8rem;
+}
+.profile-name-lastname {
+    color: rgb(43, 221, 218);
+    font-weight: 700;
+    font-size: clamp(2.5rem, 15vw, 7rem);
+    text-transform: uppercase;
+    display: block;
+    margin-bottom: 1rem;
+}
+.profile-title {
+    font-size: 1.5rem;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+.downloadBTN {
+    display: block;
+    text-decoration: underline;
+    font-size: 2rem;
+    margin-top: 2rem;
+}
+.downloadBTN:hover {
+    color: var(--primary-color);
+}
+@media only screen and (max-width: 768px) {
+.profile-container {
+    flex-direction: column;
+}    
+}
+
+/* Expertise */
+.skill-list {
+margin-top: 1rem;
+margin-left: 2rem;
+line-height: 2;
+}
+
+/* ref */
+.ref-item {
+    margin-top: 2rem;
+}
+.ref-name {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+/* Edu */
+.sub-name {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+/* lan */
+.lan-name {
+    font-size: 1rem;
+    margin-top: 1rem;
+    color: var(--text-color);
+
+}
